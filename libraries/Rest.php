@@ -251,9 +251,9 @@ class REST
     // Format XML for output
     private function _xml($string)
     {        
-        //return (array) simplexml_load_string($string);
-        $xmlArray =  simplexml_load_string($string);
-        $xmlArray->addChild('http_code',$this->curl->info['http_code']);
+        //return (array) simplexml_load_string($string);                
+        $xmlArray =  simplexml_load_string($string);        
+        $xmlArray->addChild('http_code',$this->curl->info['http_code']);        
         return (array) $xmlArray;
     }
 
