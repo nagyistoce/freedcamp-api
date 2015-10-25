@@ -1,0 +1,1 @@
+This is a PHP api example of Freedcamp
